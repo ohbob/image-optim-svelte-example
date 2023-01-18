@@ -7,7 +7,7 @@
   <section style="height:400px">
     <Image FORMATS="webp" src="hero.jpg" />
   </section>
-  <Title content="WEBP content / 594kb" />
+  <Title content="WEBP" />
   <section class="grid md:grid-cols-3 lg:grid-cols-4 gap-x-5 md:gap-y-7">
     {#each [...Array(16).keys()] as n}
       <Image FORMATS="webp" src="{n}.jpg" />

@@ -7,7 +7,7 @@
   <section style="height:400px">
     <Image src="hero.jpg" />
   </section>
-  <Title content="AVIF content / 331kb" />
+  <Title content="AVIF" />
   <section class="grid md:grid-cols-3 lg:grid-cols-4 gap-x-5 md:gap-y-7">
     {#each [...Array(16).keys()] as n}
       <Image src="{n}.jpg" />

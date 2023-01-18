@@ -7,7 +7,7 @@
   <section style="height:400px">
     <Image FORMATS="jpg" src="hero.jpg" />
   </section>
-  <Title content="JPG content / 973kb" />
+  <Title content="JPG" />
   <section class="grid md:grid-cols-3 lg:grid-cols-4 gap-x-5 md:gap-y-7">
     {#each [...Array(16).keys()] as n}
       <Image FORMATS="jpg" src="{n}.jpg" />
