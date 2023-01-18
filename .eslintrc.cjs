@@ -1,25 +1,11 @@
 module.exports = {
-    parserOptions: {
-        ecmaVersion: 2019,
-        sourceType: 'module'
-    },
-    env: {
-        es6: true,
-        browser: true
-    },
-    plugins: [
-        'svelte3'
-    ],
-    overrides: [
-        {
-            files: ['*.svelte'],
-            processor: 'svelte3/svelte3'
-        }
+    extends: [
+        // add more generic rule sets here, such as:
+        // 'eslint:recommended',
+        "plugin:svelte/recommended",
     ],
     rules: {
-        // ...
+        // override/add rules settings here, such as:
+        // 'svelte/rule-name': 'error'
     },
-    settings: {
-        // ...
-    }
-};
+}
