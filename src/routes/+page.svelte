@@ -5,12 +5,12 @@
 
 <main class="container mx-auto pb-10">
   <section style="height:400px">
-    <Image FORMATS="jpg" src="hero.jpg" />
+    <Image src="hero.jpg" />
   </section>
-  <Title content="JPG" />
+  <Title content="AVIF" />
   <section class="grid md:grid-cols-3 lg:grid-cols-4 gap-x-5 md:gap-y-7">
     {#each [...Array(16).keys()] as n}
-      <Image FORMATS="jpg" src="{n}.jpg" />
+      <Image src="{n}.jpg" />
     {/each}
   </section>
 </main>

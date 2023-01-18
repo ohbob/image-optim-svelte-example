@@ -1,3 +1,7 @@
+
+
+
+
 <script>
   import Image from "$lib/components/Image.svelte";
   import Title from "$lib/components/Title.svelte";
@@ -5,12 +9,12 @@
 
 <main class="container mx-auto pb-10">
   <section style="height:400px">
-    <Image src="hero.jpg" />
+    <Image FORMATS="webp" src="hero.jpg" />
   </section>
-  <Title content="AVIF" />
+  <Title content="JPG" />
   <section class="grid md:grid-cols-3 lg:grid-cols-4 gap-x-5 md:gap-y-7">
     {#each [...Array(16).keys()] as n}
-      <Image src="{n}.jpg" />
+      <Image FORMATS="jpg" src="{n}.jpg" />
     {/each}
   </section>
 </main>
