@@ -48,9 +48,9 @@
       {/if}
 
       {#if FORMATS.includes("webp")}
-         <img {alt} src="{OUTPUT}/thumb_{src}.webp" loading=lazyload />
+         <img {alt} src="{OUTPUT}/thumb_{src}.webp" loading={lazyload} />
          {:else}
-          <img {alt} src="{OUTPUT}/thumb_{src}.jpg" loading=lazyload />
+          <img {alt} src="{OUTPUT}/thumb_{src}.jpg" loading={lazyload} />
       {/if}
 
     </picture>
