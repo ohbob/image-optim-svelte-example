@@ -4,6 +4,7 @@
   export let alt = "Image";
   src = src.split(".")[0];
   let containerWidth;
+  export let fetchprior="low"
   export let lazyload = "lazy"
   export let SIZES = {
     thumb: 50,
@@ -48,9 +49,9 @@
       {/if}
 
       {#if FORMATS.includes("webp")}
-         <img {alt} src="{OUTPUT}/thumb_{src}.webp" loading={lazyload} />
+         <img fetchpriority={fetchprior} {alt} src="{OUTPUT}/thumb_{src}.webp" loading={lazyload} />
          {:else}
-          <img {alt} src="{OUTPUT}/thumb_{src}.jpg" loading={lazyload} />
+          <img fetchpriority={fetchprior} {alt} src="{OUTPUT}/thumb_{src}.jpg" loading={lazyload} />
       {/if}
 
     </picture>

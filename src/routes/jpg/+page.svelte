@@ -6,7 +6,7 @@ const FORMATS = ['jpg']
 
 <main class="container mx-auto pb-10">
     <section style="height:400px" fetchpriority="high">
-        <Image FFORMATS={FORMATS} src="hero.jpg" lazyload="eager" />
+        <Image FORMATS={FORMATS} src="hero.jpg" lazyload="eager" fetchprior="high"/>
     </section>
     <Title content="JPG" />
     <section class="grid md:grid-cols-3 lg:grid-cols-4 gap-x-5 md:gap-y-7">
