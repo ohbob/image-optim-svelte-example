@@ -4,7 +4,7 @@
   export let alt = "Image";
   src = src.split(".")[0];
   let containerWidth;
-
+  export let lazyload = "lazy"
   export let SIZES = {
     thumb: 50,
     small: 100,
@@ -48,9 +48,9 @@
       {/if}
 
       {#if FORMATS.includes("webp")}
-         <img {alt} src="{OUTPUT}/thumb_{src}.webp" loading="lazy" />
+         <img {alt} src="{OUTPUT}/thumb_{src}.webp" loading=lazyload />
          {:else}
-          <img {alt} src="{OUTPUT}/thumb_{src}.jpg" loading="lazy" />
+          <img {alt} src="{OUTPUT}/thumb_{src}.jpg" loading=lazyload />
       {/if}
 
     </picture>

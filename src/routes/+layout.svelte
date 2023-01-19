@@ -9,7 +9,7 @@
 
 <div class="container mx-auto my-4">
   <nav class="px-4 flex gap-8 font-thin font-mono">
-     <a href="/">AVIF</a>
+    <a href="/">AVIF</a>
     <a href="/webp">WEBP</a>
     <a href="/jpg">JPG</a>
     <a href="https://github.com/ohbob/image-optim"><img style="height:20px" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt=""></a>
